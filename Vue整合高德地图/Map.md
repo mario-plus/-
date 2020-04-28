@@ -1,5 +1,9 @@
 申请key：https://console.amap.com/dev/key/app
 
+vue.js-key：4ca5f7e2483b349dd91e07143790671b
+
+web-key:aef1f99ef62777c19a8c6517d489e645
+
 高德官方：https://lbs.amap.com/api/javascript-api/reference/overlay/
 
 vue整合高德地图官方文档：https://elemefe.github.io/vue-amap/#/zh-cn/introduction/install
@@ -22,7 +26,57 @@ vue整合高德地图官方文档：https://elemefe.github.io/vue-amap/#/zh-cn/i
    })
    ```
 
-   
+
+
+
+getCurrentPosition返回的 result
+
+```json
+{
+    "type":"complete",
+    "info":"SUCCESS",
+    "status":1,
+    "Eia":"jsonp_632182_",
+    "position":{
+        "P":22.24265,
+        "O":113.57272,
+        "lng":113.57272,
+        "lat":22.24265
+    },
+    "message":"Get ipLocation success.Get address success.",
+    "location_type":"ip",
+    "accuracy":null,
+    "isConverted":true,
+    "addressComponent":{
+        "citycode":"0756",
+        "adcode":"440402",
+        "businessAreas":[
+            {
+                "name":"石花","id":"440402",
+                "location":{               
+                    "P":22.239407,"O":113.57378399999999,                        
+                    "lng":113.573784,"lat":22.239407                }
+            }
+        ],
+      "neighborhoodType":"",
+        "neighborhood":"",
+        "building":"",
+        "buildingType":"",
+        "street":"水湾路",
+        "streetNumber":"351号",
+        "province":"广东省",
+        "city":"珠海市",
+        "district":"香洲区",
+        "township":"吉大街道"
+    },
+    "formattedAddress":"广东省珠海市香洲区吉大街道水湾路351号中国工商银行(珠海分行)",
+    "roads":[],
+    "crosses":[],
+    "pois":[]
+}
+```
+
+
 
 example (其中包含精准定位，坐标点，圆圈等)
 
